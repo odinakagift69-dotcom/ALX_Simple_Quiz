@@ -5,7 +5,7 @@ function checkAnswer(){
     // Step 2: Get the user's selected answer
     const selectedOption = document.querySelector('input[name="quiz"]:checked');
 
-    // Step 3: Check if an option is selected
+    // Step 3: Handle case when no option is selected 
     if (!selectedOption) {
         document.getElementById("feedback").textContent ="Please select an answer before submitting.";
         return;
